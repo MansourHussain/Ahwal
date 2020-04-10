@@ -1,6 +1,9 @@
+body {
+    direction: rtl;
+}
 * {
     margin: auto;
-    text-align: center;
+    text-align: right;
    
 }
 /* Chrome, Safari, Edge, Opera */
@@ -10,30 +13,53 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+/* Firefox */ /*Hide increase button*/
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
 .header{
     color:white;
     padding: 10px;
     height: 100%;
     width:auto;
-    background-color: rgb(0, 176, 240);
+    background-color:rgb(212, 192, 142);
     font-size: 30px;
     font-weight: bold;
 }
 
+h1 {
+    color: rgb(4, 85, 61);
+}
+
 
 img {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
+    border: 3.5px solid rgb(212, 192, 142);
     border-radius: 50%;
     float: right;
 }
+input {
+    height: 20px;
+    border-radius: 15px;
+}
+table th, tr, th  {
+    font-size: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+  }
 .container{
     width: auto;
-    height: 120px;
-    background:#555;
-    font-size: 30px;
+    height: auto;
+    background: rgb(4, 85, 61);
+    font-size: 20px;
     color: white;
     border: 30px;
-    padding:80px;
+    padding-top:180px;
+    padding-right: 20px;
     
 }
