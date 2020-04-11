@@ -10,69 +10,89 @@
     </header>
     <body>
         <div class="container">
-            <label> عدد أساسات السعوديين </label> 
-            <input class="citizens-files" type="number" value=""><br>
-            <label>عدد أساسات السعوديين المؤرشفة</label>
-            <input class="archived-citizens-files" type="number" value=""><br>
-            <label>عدد أساسات المتجنسين</label>
-            <input class="citizenship-files" type="number" value=""><br>
-            <label>عدد أساسات المتجنسين المؤرشفة</label>
-            <input class="archived-citizenship-files" type="number" value=""> <br>
-            <button class="register" type="submit">سجل</button> <br>
-
-            <table id="customers">
-                <tr>
-                    <th>المكتب</th>
-                    <th>أساسات المواطنين</th>
-                    <th>المؤرشف منها</th>
-                    <th>أساسات المتجنسين</th>
-                    <th>المؤرشف منها</th>
-                    <th>أساسات المواليد للسعوديين</th>
-                    <th>المؤرشف منها</th>
-                    <th>أساسات المواليد لغير السعوديين</th>
-                    <th>المؤرشف منها</th>
-                    <th>أساسات الوفيات للسعوديين</th>
-                    <th>المؤرشف منها</th>
-                    <th>أساسات الوفيات لغير السعوديين</th>
-                    <th>المؤرشف منها</th>
-                    <th>الإجمالي</th>
-                </tr>
-                <tr>
-                    <td>أبــها</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>
-                        الاجمالي
-                    </th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                
-            </table>
+            <div class="form">
+                <label> عدد أساسات السعوديين </label> 
+                <input class="citizens-files" type="number" value=""><br>
+                <label>عدد أساسات السعوديين المؤرشفة</label>
+                <input class="archived-citizens-files" type="number" value=""><br>
+                <label>عدد أساسات المتجنسين</label>
+                <input class="citizenship-files" type="number" value=""><br>
+                <label>عدد أساسات المتجنسين المؤرشفة</label>
+                <input class="archived-citizenship-files" type="number" value=""><br>
+                <button class="register" type="submit">سجل</button><br>
+            </div>
+            <div>
+                <table id="customers">
+                    <tr>
+                        <th rowspan="2">المكتب</th>
+                        <th colspan="2">أساسات المواطنين</th>    
+                        
+                        <th colspan="2">أساسات المتجنسين</th>
+                        
+                        <th colspan="2">أساسات المواليد للسعوديين</th>
+                        
+                        <th colspan="2">أساسات المواليد لغير السعوديين</th>
+                        
+                        <th colspan="2">أساسات الوفيات للسعوديين</th>
+                        
+                        <th colspan="2">أساسات الوفيات لغير السعوديين</th>
+                        
+                        <th colspan="2">الإجمالي</th>
+                    </tr>
+                    <tr>
+                        <td>أساس</td>
+                        <td>ممسوح</td>
+                        <td>أساس</td>
+                        <td>ممسوح</td>
+                        <td>أساس</td>
+                        <td>ممسوح</td>
+                        <td>أساس</td>
+                        <td>ممسوح</td>
+                        <td>أساس</td>
+                        <td>ممسوح</td>
+                        <td>أساس</td>
+                        <td>ممسوح</td>
+                        <td>أساس</td>
+                        <td>ممسوح</td>
+                        
+                    </tr>
+                    <tr>
+                        <th>أبــها</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>الاجمالي</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    
+                </table>
+            </div>
         </div>
 
         <script src="main.js"></script>

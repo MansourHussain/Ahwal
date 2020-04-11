@@ -42,15 +42,23 @@ img {
 }
 input {
     height: 20px;
+    width: 60px;
     border-radius: 15px;
 }
-table th, tr, th  {
+
+table {
+    height: 250px;
+    width: 700px;
+}
+ th, tr, td  {
     font-size: 15px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     text-align: center;
-    background-color: #4CAF50;
+    background-color: rgba(184, 183, 179, 0.479);
     color: white;
+    border: 0.1px solid black;
+    vertical-align: center;
   }
 .container{
     width: auto;
