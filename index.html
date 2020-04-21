@@ -1,100 +1,78 @@
 <!DOCTYPE html>
 <html lang="ar">
     
-    <header class="header">
-            <title>الإحصائية الأسبوعية</title>
-            <h1>الإحصائية الأسبوعية</h1>
-            <meta charset="utf-8">
-            <link rel="stylesheet" href="style.css" type="text/css">
-            <img src="images/ahwal-logo.png">
-    </header>
-    <body>
-        <div class="container">
-            <div class="form">
-                <label> عدد أساسات السعوديين </label> 
-                <input class="citizens-files" type="number" value=""><br>
-                <label>عدد أساسات السعوديين المؤرشفة</label>
-                <input class="archived-citizens-files" type="number" value=""><br>
-                <label>عدد أساسات المتجنسين</label>
-                <input class="citizenship-files" type="number" value=""><br>
-                <label>عدد أساسات المتجنسين المؤرشفة</label>
-                <input class="archived-citizenship-files" type="number" value=""><br>
-                <button class="register" type="submit">سجل</button><br>
-            </div>
-            <div>
-                <table id="customers">
-                    <tr>
-                        <th rowspan="2">المكتب</th>
-                        <th colspan="2">أساسات المواطنين</th>    
-                        
-                        <th colspan="2">أساسات المتجنسين</th>
-                        
-                        <th colspan="2">أساسات المواليد للسعوديين</th>
-                        
-                        <th colspan="2">أساسات المواليد لغير السعوديين</th>
-                        
-                        <th colspan="2">أساسات الوفيات للسعوديين</th>
-                        
-                        <th colspan="2">أساسات الوفيات لغير السعوديين</th>
-                        
-                        <th colspan="2">الإجمالي</th>
-                    </tr>
-                    <tr>
-                        <td>أساس</td>
-                        <td>ممسوح</td>
-                        <td>أساس</td>
-                        <td>ممسوح</td>
-                        <td>أساس</td>
-                        <td>ممسوح</td>
-                        <td>أساس</td>
-                        <td>ممسوح</td>
-                        <td>أساس</td>
-                        <td>ممسوح</td>
-                        <td>أساس</td>
-                        <td>ممسوح</td>
-                        <td>أساس</td>
-                        <td>ممسوح</td>
-                        
-                    </tr>
-                    <tr>
-                        <th>أبــها</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th>الاجمالي</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    
-                </table>
-            </div>
-        </div>
-
-        <script src="main.js"></script>
+  <header class="header">
+    <title>الإحصائية الأسبوعية</title>
+    <h1>الإحصائية الأسبوعية</h1>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <img src="images/ahwal-logo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </header>
+  <body> 
+    <div class="container">
+      <div class="form">
+        <label> عدد أساسات السعوديين </label> 
+        <input class="citizens-files" type="number" value=""><br>
+        <label>عدد أساسات السعوديين المؤرشفة</label>
+        <input class="archived-citizens-files" type="number" value=""><br>
+        <label>عدد أساسات المتجنسين</label>
+        <input class="citizenship-files" type="number" value=""><br>
+        <label>عدد أساسات المتجنسين المؤرشفة</label>
+        <input class="archived-citizenship-files" type="number" value=""><br>
+        <button class="register" type="submit">سجل</button><br>
+      </div>
+      <div>
+        <table id="customers">
+          <tr>
+              <th rowspan="2">المكتب</th>
+              <th colspan="2">أساسات المواطنين</th>    
+              <th colspan="2">أساسات المتجنسين</th>
+              <th colspan="2">مواليد</th>
+              <th colspan="2">وفيات</th>
+              <th colspan="2">الإجمالي</th>
+          </tr>
+          <tr>
+              <td>أساس</td>
+              <td>ممسوح</td>
+              <td>أساس</td>
+              <td>ممسوح</td>
+              <td>أساس</td>
+              <td>ممسوح</td>
+              <td>أساس</td>
+              <td>ممسوح</td>
+              <td>أساس</td>
+              <td>ممسوح</td>  
+          </tr>
+          <tr>
+              <th>أبــها</th>
+              <td class="native-ctz-quantity"></td> <!--native citizens files quantity-->
+              <td class="native-ctz-archived"></td> <!--native citizens files that has archived-->
+              <td class="non-native-ctz-quantity"></td> <!--non-native citizens files quantity-->
+              <td class="non-native-ctz--archived"></td> <!--non-native citizens files quantity-->
+              <td class="births-quantity"></td> <!--births files quantity-->
+              <td class="births-archived"></td> <!--births files archived-->
+              <td class="deaths-quantity"></td> <!--deaths files quantity-->
+              <td class="deaths-archived"></td> <!--deaths files archived-->
+              <td class="total-quantity"></td> <!--total files quantity-->
+              <td class="total-archived"></td> <!--total files archived-->
+          </tr>
+          <tr>
+              <th>الإجمالي</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+      <script src="main.js"></script>
     </body>
 </html>

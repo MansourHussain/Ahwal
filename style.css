@@ -1,10 +1,9 @@
 body {
-    direction: rtl;
+  direction: rtl;
 }
 * {
-    margin: auto;
-    text-align: right;
-   
+  margin: auto;
+  text-align: right;
 }
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -14,60 +13,60 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */ /*Hide increase button*/
-input[type=number] {
-    -moz-appearance: textfield;
-  }
+input[type="number"] {
+  -moz-appearance: textfield;
+}
 
-.header{
-    color:white;
-    padding: 10px;
-    height: 100%;
-    width:auto;
-    background-color:rgb(212, 192, 142);
-    font-size: 30px;
-    font-weight: bold;
+.header {
+  color: white;
+  padding: 10px;
+  height: 100%;
+  width: auto;
+  background-color: rgb(212, 192, 142);
+  font-size: 30px;
+  font-weight: bold;
 }
 
 h1 {
-    color: rgb(4, 85, 61);
+  color: rgb(4, 85, 61);
 }
-
 
 img {
-    height: 150px;
-    width: 150px;
-    border: 3.5px solid rgb(212, 192, 142);
-    border-radius: 50%;
-    float: right;
+  height: 150px;
+  width: 150px;
+  border: 3.5px solid rgb(212, 192, 142);
+  border-radius: 50%;
+  float: right;
 }
 input {
-    height: 20px;
-    width: 60px;
-    border-radius: 15px;
+  height: 20px;
+  width: 60px;
+  border-radius: 15px;
 }
 
 table {
-    height: 250px;
-    width: 700px;
+  height: 250px;
+  width: 700px;
 }
- th, tr, td  {
-    font-size: 15px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    text-align: center;
-    background-color: rgba(184, 183, 179, 0.479);
-    color: white;
-    border: 0.1px solid black;
-    vertical-align: center;
-  }
-.container{
-    width: auto;
-    height: auto;
-    background: rgb(4, 85, 61);
-    font-size: 20px;
-    color: white;
-    border: 30px;
-    padding-top:180px;
-    padding-right: 20px;
-    
+th,
+tr,
+td {
+  font-size: 15px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-align: center;
+  background-color: rgb(184, 183, 179);
+  color: white;
+  border: 0.1px solid black;
+  vertical-align: center;
+}
+.container {
+  width: auto;
+  height: auto;
+  background: rgb(4, 85, 61);
+  font-size: 20px;
+  color: white;
+  border: 30px;
+  padding-top: 180px;
+  padding-right: 20px;
 }
