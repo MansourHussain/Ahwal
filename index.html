@@ -7,19 +7,26 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css" type="text/css">
     <img src="images/ahwal-logo.png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </header>
   <body> 
     <div class="container">
       <div class="form">
         <label> عدد أساسات السعوديين </label> 
-        <input class="citizens-files" type="number" value=""><br>
+        <input class="newcitizens-files" type="number" value=""><br>
         <label>عدد أساسات السعوديين المؤرشفة</label>
-        <input class="archived-citizens-files" type="number" value=""><br>
+        <input class="archived-newcitizens-files" type="number" value=""><br>
         <label>عدد أساسات المتجنسين</label>
-        <input class="citizenship-files" type="number" value=""><br>
+        <input class="newnaturalized_files" type="number" value=""><br>
         <label>عدد أساسات المتجنسين المؤرشفة</label>
-        <input class="archived-citizenship-files" type="number" value=""><br>
+        <input class="archived_newnaturalized_files" type="number" value=""><br>
+        <label>عدد أساسات المواليد</label>
+        <input class="newbirths-files" type="number" value=""><br>
+        <label>عدد أساسات المواليد المؤرشفة</label>
+        <input class="archived_newbirths-files" type="number" value=""><br>
+        <label>عدد أساسات الوفيات</label>
+        <input class="newdeaths-files" type="number" value=""><br>
+        <label>عدد أساسات الوفيات المؤرشفة</label>
+        <input class="archived_newdeaths-files" type="number" value=""><br>
         <button class="register" type="submit">سجل</button><br>
       </div>
       <div>
@@ -46,29 +53,16 @@
           </tr>
           <tr>
               <th>أبــها</th>
-              <td class="native-ctz-quantity"></td> <!--native citizens files quantity-->
-              <td class="native-ctz-archived"></td> <!--native citizens files that has archived-->
-              <td class="non-native-ctz-quantity"></td> <!--non-native citizens files quantity-->
-              <td class="non-native-ctz--archived"></td> <!--non-native citizens files quantity-->
+              <td class="citizens-quantity"></td> <!-- citizens files quantity-->
+              <td class="citizens-archived"></td> <!-- citizens files that has archived-->
+              <td class="naturalized-quantity"></td> <!--naturalized files quantity-->
+              <td class="naturalized-archived"></td> <!--naturalized files that has archived-->
               <td class="births-quantity"></td> <!--births files quantity-->
-              <td class="births-archived"></td> <!--births files archived-->
+              <td class="births-archived"></td> <!--births files that has archived-->
               <td class="deaths-quantity"></td> <!--deaths files quantity-->
-              <td class="deaths-archived"></td> <!--deaths files archived-->
+              <td class="deaths-archived"></td> <!--deaths files that has archived-->
               <td class="total-quantity"></td> <!--total files quantity-->
-              <td class="total-archived"></td> <!--total files archived-->
-          </tr>
-          <tr>
-              <th>الإجمالي</th>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td class="total-archived"></td> <!--total files that has archived-->
           </tr>
         </table>
       </div>
