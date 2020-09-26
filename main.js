@@ -25,25 +25,25 @@ register.addEventListener('click', function() {
     var archived_newBirths_files = document.querySelector(".archived-newbirths-files").value;
     var newDeaths_files = document.querySelector(".newdeaths-files").value;
     var archived_newDeaths_files = document.querySelector(".archived-newdeaths-files").value;
-
-
-    citizens_quantity.innerHTML = `${newCitizens_files}`;
-    citizens_archived.innerHTML = `${archived_newCitizens_files}`;
-    naturalized_quantity.innerHTML = `${newNaturalized_files}`;
-    naturalized_archived.innerHTML = `${archived_newNaturalized_files}`;
-    births_quantity.innerHTML = `${newBirths_files}`;
-    births_archived.innerHTML = `${archived_newBirths_files}`;
-    deaths_quantity.innerHTML = `${newDeaths_files}`;
-    deaths_archived.innerHTML = `${archived_newDeaths_files}`;
-
     
-    console.log(newCitizens_files + newNaturalized_files + newBirths_files + newDeaths_files);
-    /*function total() {
-        var allFiles_quantity = newCitizens_files + newNaturalized_files + newBirths_files + newDeaths_files;
-        total_quantity.innerHTML = `${allFiles_quantity}`;
-    // let allFiles_archived;
+
+    citizens_quantity.innerHTML = newCitizens_files;
+    citizens_archived.innerHTML = archived_newCitizens_files;
+    naturalized_quantity.innerHTML = newNaturalized_files;
+    naturalized_archived.innerHTML = archived_newNaturalized_files;
+    births_quantity.innerHTML = newBirths_files;
+    births_archived.innerHTML = archived_newBirths_files;
+    deaths_quantity.innerHTML = newDeaths_files;
+    deaths_archived.innerHTML = archived_newDeaths_files;
+    
+    
+    function total() {
+        let allFiles_quantity = parseInt(newCitizens_files)  + parseInt(newNaturalized_files) + parseInt(newBirths_files) + parseInt(newDeaths_files);
+        total_quantity.innerHTML = allFiles_quantity;
+        let allFiles_archived = parseInt(archived_newCitizens_files) + parseInt(archived_newNaturalized_files) + parseInt(archived_newBirths_files) + parseInt(archived_newDeaths_files);
+        total_archived.innerHTML = allFiles_archived;
     }
 
-    total();*/
+    total();
     
 })
